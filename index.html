@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Archivo de niebla: una lectura editorial sobre la saga Silent Hill y sus juegos." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>Nieblas — Archivo Silent Hill</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Nieblas, volver al inicio">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-copy">
+            <strong>NIEBLAS</strong>
+            <small>archivo de terror psicológico</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a class="is-active" href="#inicio">Inicio</a>
+          <a href="#archivo">El archivo</a>
+          <a href="#lectura">La lectura</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+
+        <div class="header-meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Señal estable</span>
+          <span class="meta-divider"></span>
+          <span>07 : 27 PM</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+          <div class="hero-sky" aria-hidden="true">
+            <span class="sky-orb"></span>
+            <span class="distant-lights light-one"></span>
+            <span class="distant-lights light-two"></span>
+          </div>
+          <div class="fog fog-back" aria-hidden="true"></div>
+          <div class="fog fog-mid" aria-hidden="true"></div>
+          <div class="fog fog-front" aria-hidden="true"></div>
+          <div class="road-lines" aria-hidden="true"></div>
+          <div class="hero-vignette" aria-hidden="true"></div>
+
+          <div class="hero-content page-container">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Transmisión perdida · expediente 04</p>
+            <h1 id="hero-title">La ciudad<br /><em>te recuerda.</em></h1>
+            <p class="hero-intro">
+              Una guía visual para perderse en los juegos que convirtieron la culpa, la niebla y el ruido de una radio en una nueva forma de miedo.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#archivo">
+                Entrar en la niebla
+                <span class="button-arrow" aria-hidden="true">↗</span>
+              </a>
+              <button class="text-button" type="button" data-open-modal="signal">
+                <span class="play-icon" aria-hidden="true">▶</span>
+                Escuchar la señal <small>0:47</small>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-index" aria-hidden="true">
+            <span>01</span>
+            <span class="index-rule"></span>
+            <span>04</span>
+          </div>
+
+          <div class="scroll-cue">
+            <span class="scroll-line"></span>
+            <span>desliza para descender</span>
+          </div>
+        </section>
+
+        <section class="manifesto section-dark" id="lectura" aria-labelledby="manifesto-title">
+          <div class="page-container manifesto-grid">
+            <div class="section-label">
+              <span>01</span>
+              <span class="vertical-rule"></span>
+              <span>La lectura</span>
+            </div>
+            <div class="manifesto-main">
+              <p class="eyebrow rust"><span class="eyebrow-line"></span> No es un lugar. Es un espejo.</p>
+              <h2 id="manifesto-title">El miedo no<br /><span>viene de fuera.</span></h2>
+              <p class="manifesto-copy">
+                En Silent Hill, cada calle parece construida con recuerdos. Los juegos no te piden escapar de un monstruo: te preguntan por qué lo reconoces. Aquí reunimos sus mundos, sus heridas y todo lo que permanece después de apagar la consola.
+              </p>
+              <a class="underlined-link" href="#archivo">Explorar los expedientes <span>→</span></a>
+            </div>
+            <aside class="quote-card">
+              <span class="quote-mark">“</span>
+              <blockquote>Hay una voz al otro lado de la niebla. No dice tu nombre. Dice lo que hiciste.</blockquote>
+              <cite>— nota encontrada en el muelle</cite>
+            </aside>
+          </div>
+        </section>
+
+        <section class="archive section-paper" id="archivo" aria-labelledby="archive-title">
+          <div class="page-container">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow"><span class="eyebrow-line"></span> Archivo de juegos · 1999—2024</p>
+                <h2 id="archive-title">Tres puertas.<br /><em>La misma niebla.</em></h2>
+              </div>
+              <p class="section-heading-note">Selecciona una entrada<br />para abrir su expediente.</p>
+            </div>
+
+            <div class="filter-bar" role="toolbar" aria-label="Filtrar juegos del archivo">
+              <span class="filter-caption">Ordenar por</span>
+              <button class="filter-button is-selected" type="button" data-filter="all">Todos <span>03</span></button>
+              <button class="filter-button" type="button" data-filter="origen">Origen <span>01</span></button>
+              <button class="filter-button" type="button" data-filter="culpa">Culpa <span>01</span></button>
+              <button class="filter-button" type="button" data-filter="carne">Carne <span>01</span></button>
+            </div>
+
+            <div class="game-grid">
+              <article class="game-card featured" data-category="culpa" data-game="sh2">
+                <div class="card-visual visual-two">
+                  <div class="visual-number">02</div>
+                  <div class="visual-sun"></div>
+                  <div class="visual-horizon"></div>
+                  <div class="visual-silhouette silhouette-two"></div>
+                  <div class="visual-caption">THE OTHER SIDE</div>
+                  <span class="card-status">Expediente abierto</span>
+                </div>
+                <div class="card-body">
+                  <div class="card-topline"><span>2001 · Konami</span><span class="rating">★ 9.2</span></div>
+                  <h3>Silent Hill <em>2</em></h3>
+                  <p>Una carta. Una promesa. El camino que solo aparece cuando ya no queda nada que perder.</p>
+                  <div class="card-footer"><span class="tag">Culpa</span><button class="open-file" type="button" data-open-modal="sh2">Abrir expediente <span>↗</span></button></div>
+                </div>
+              </article>
+
+              <article class="game-card" data-category="origen" data-game="sh1">
+                <div class="card-visual visual-one">
+                  <div class="visual-number">01</div>
+                  <div class="visual-moon"></div>
+                  <div class="visual-horizon"></div>
+                  <div class="visual-silhouette silhouette-one"></div>
+                  <div class="visual-caption">WELCOME HOME</div>
+                  <span class="card-status">Señal recuperada</span>
+                </div>
+                <div class="card-body">
+                  <div class="card-topline"><span>1999 · Konami</span><span class="rating">★ 8.9</span></div>
+                  <h3>Silent Hill <em>1</em></h3>
+                  <p>El origen de la niebla: una niña, un pueblo detenido y una dimensión que respira bajo el asfalto.</p>
+                  <div class="card-footer"><span class="tag">Origen</span><button class="open-file" type="button" data-open-modal="sh1">Abrir expediente <span>↗</span></button></div>
+                </div>
+              </article>
+
+              <article class="game-card" data-category="carne" data-game="sh3">
+                <div class="card-visual visual-three">
+                  <div class="visual-number">03</div>
+                  <div class="visual-moon"></div>
+                  <div class="visual-horizon"></div>
+                  <div class="visual-silhouette silhouette-three"></div>
+                  <div class="visual-caption">NO MORE GODS</div>
+                  <span class="card-status">Advertencia</span>
+                </div>
+                <div class="card-body">
+                  <div class="card-topline"><span>2003 · Konami</span><span class="rating">★ 8.7</span></div>
+                  <h3>Silent Hill <em>3</em></h3>
+                  <p>La pesadilla vuelve a tener cuerpo. Crecer también puede ser una forma de entrar en la oscuridad.</p>
+                  <div class="card-footer"><span class="tag">Carne</span><button class="open-file" type="button" data-open-modal="sh3">Abrir expediente <span>↗</span></button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="archive-footer">
+              <p><span class="live-pulse"></span> 03 expedientes indexados / 26 documentos pendientes</p>
+              <button class="text-button dark" type="button" data-open-modal="note">¿Qué falta en el archivo? <span>↗</span></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="signal-section" aria-labelledby="signal-title">
+          <div class="signal-art" aria-hidden="true">
+            <span class="signal-circle circle-large"></span>
+            <span class="signal-circle circle-small"></span>
+            <span class="signal-cross cross-one"></span>
+            <span class="signal-cross cross-two"></span>
+            <span class="signal-noise noise-one"></span>
+            <span class="signal-noise noise-two"></span>
+          </div>
+          <div class="page-container signal-content">
+            <p class="eyebrow rust"><span class="eyebrow-line"></span> Registro sonoro · 04:17</p>
+            <h2 id="signal-title">Cuando la radio<br /><em>se enciende.</em></h2>
+            <p>El sonido es el mapa. Sube el volumen solo si sabes qué estás buscando.</p>
+            <button class="button button-outline" type="button" data-open-modal="signal">Reproducir fragmento <span>▶</span></button>
+          </div>
+          <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="page-container footer-grid">
+          <div class="footer-brand"><span class="brand-mark" aria-hidden="true">N</span><span>Una guía no oficial<br />para lugares imposibles.</span></div>
+          <div class="footer-note">Si llegaste hasta aquí,<br /><em>ya estás dentro.</em></div>
+          <div class="footer-meta"><span>© 2024 NIEBLAS</span><span>Hecho entre estática y lluvia</span><a href="#inicio">Volver arriba ↑</a></div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal-backdrop" data-modal-backdrop hidden>
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Cerrar ventana">×</button>
+        <p class="eyebrow rust"><span class="eyebrow-line"></span> Documento recuperado</p>
+        <h2 id="modal-title">La señal permanece.</h2>
+        <div class="modal-copy" data-modal-copy></div>
+        <div class="modal-footer"><span class="modal-index">NIEBLAS / 04</span><button class="button button-primary modal-action" type="button">Entendido <span>↗</span></button></div>
+      </section>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
